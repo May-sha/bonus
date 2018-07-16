@@ -8,10 +8,6 @@ import team from '../../widgets/team/layout.js';
 import contact from '../../widgets/contact/layout.js';
 import gotop from '../../widgets/gotop/layout.js';
 
-// import scheme from '../../widgets/scheme/layout.js';
-// import cooperation from '../../widgets/cooperation/layout.js';
-// import footer from '../../widgets/footer/layout.js';
-
 
 let link = `<link rel="stylesheet" href="/maincloud/pages/index/index.css">`;
 let script = `<script src="/maincloud/pages/index/$index.js"></script>`;

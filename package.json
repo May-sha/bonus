@@ -13,6 +13,7 @@
   "author": "zhangfangcheng",
   "license": "ISC",
   "dependencies": {
+    "ansi-cyan": "^0.1.1",
     "babel-cli": "^6.11.4",
     "babel-core": "^6.11.4",
     "babel-loader": "^6.2.4",
