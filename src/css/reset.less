@@ -1,0 +1,197 @@
+@cloud-blue: #3483e7;
+@cloud-blue2: #0074cc;
+@cloud-red: #f76120;
+
+.yahei(@font-size: 14px){
+    font-size: @font-size;
+    font-family: 'Lato Regular', 'Microsoft Yahei', Helvetica Neue,Helvetica,PingFang SC,Heiti SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+}
+
+html, body{
+    font-family: 'Lato Regular', 'Microsoft Yahei', Helvetica,PingFang SC,Heiti SC,Hiragino Sans GB, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	min-height: 100%;
+    background-color: #fff;
+    color: #333;
+}
+html,body,html,div,p,strong,span,em,i,img,dl,ol,ul,li,dt,dd{
+	margin: 0;
+	padding: 0;
+}
+ol, ul, li{
+	list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+a{
+    color: @cloud-blue;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+	font-weight: 500;
+	line-height: 1.2;
+    padding: 0;
+    margin: 10px 0;
+}
+dt{
+	font-weight: normal;
+}
+select, input {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -bonuscloud-border-radius: 0px;
+    -o-border-radius: 0px;
+    background-color: #fff;
+}
+.clearfix:after { 
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.yahei(@font-size: 14px){
+	font-size: @font-size;
+    font-family: 'Lato Regular', Helvetica Neue,Helvetica,PingFang SC,Heiti SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+}
+.label-value{
+    word-break: break-all;
+}
+.disable{
+    color: #999;
+    cursor: default;
+}
+.hidden{
+    display: none;
+}
+.red{
+    color: @cloud-red !important;
+}
+.green {
+    color: green;
+}
+
+.radio label.disable, .checkbox label.disable{
+    cursor: default;
+}
+.btn{
+    border-radius: 0;
+    &:focus{
+        outline: none;
+    }
+}
+.high-light{
+	color: @cloud-blue;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+.red-light{
+	color: #812626;
+}
+.disable-light{
+	color: #999;
+}
+.cloud-red{
+	color: @cloud-red;
+}
+.popupdialog-container{
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    height: 100%;
+    overflow: auto;
+    overflow-y: scroll;
+    text-align: center;
+    .popupdialog{
+        position: relative;
+        display: inline-block;
+        min-height: 200px;
+        background-color: #fff;
+        opacity: 1;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    }
+    .popup-header{
+        background-color: #fbfbfb;
+        padding: 15px;
+        border-bottom: 1px solid #e5e5e5;
+        h4 {
+            margin: 0;
+            line-height: 1.5;
+            font-size: 15px;
+        }
+    }
+    .popup-content{
+        min-height: 100px;
+        position: relative;
+        padding: 20px;
+        text-align: left;
+    }
+    .modal-info{
+        text-align: left;
+    }
+    .popup-footer{
+        padding: 19px 20px 20px;
+        border-top: 1px solid #e5e5e5;
+        text-align: center;
+        .btn{
+            padding: 7px 30px;
+            margin: 0 30px;
+        }
+    }
+    .popup-close{
+        position: absolute;
+        padding: 10px;
+        top: 0;
+        right: 0;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1;
+        color: #999;
+        cursor: pointer;
+    }
+}
+#sem-maidian{
+	display: none;
+}
+.clear-padding{
+    padding: 0;
+}
+.triggle-right-up,.triggle-left-up{
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+.triggle-right-up{
+    border-width: 0 6px 6px 0;
+}
+
+.triggle-left-up{
+    border-width: 6px 6px 0 0;
+}
+
+/*google insert iframe css*/
+iframe[name="google_conversion_frame"]{
+  display: none;
+}
+
+/** 变换状态的样式 **/
+.enable-status{
+    display: block;
+    width: 58px;
+    height: 24px;
+    vertical-align: middle;
+    margin: 5px;
+    background: url(/media/maincloud/img/enable_switches.png) no-repeat;
+    &.on, &.true{
+        background-position: 0 0;
+    }
+    &.off, &.false{
+        background-position: 0 -44px;
+    }
+}
+/*base*/

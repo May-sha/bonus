@@ -1,0 +1,162 @@
+.news {
+    min-width: 1200px;
+}
+.news-content {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    .news-ul-pc {
+        width: 101.5%;
+        padding-bottom: 15px;
+        overflow: hidden;
+    }
+    .news-ul-pc .news-item{
+        width: 33%;
+        float: left;
+        box-sizing: border-box;
+        padding-right: 1.5%;
+    }
+    .news-item .with-image {
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        &:hover {
+            box-shadow: 0 0 12px 0 rgba(33, 86, 178, 0.28);
+            img {
+                -webkit-transform: scale(1.15, 1.15);
+            }
+        }
+        .news-img {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+        img {
+            height: 100%;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+        .news-desc {
+            position: absolute;
+            bottom: 0px;
+            box-sizing: border-box;
+            width: 100%;
+
+            padding: 5px 15px;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333333;
+            letter-spacing: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+        .news-title {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+
+            border-radius: 3px;
+
+            min-width: 40px;
+
+            text-align: center;
+
+            line-height: 1.5;
+            font-size: 16px;
+            color: #666;
+
+            vertical-align: middle;
+        }
+        .news-desc-content {
+            font-size: 14px;
+            color: #999;
+        }
+    }
+}
+
+.news-ul-pc .news-item .no-image {
+    margin-top: 28px;
+    line-height: 1.5;
+    padding: 0px 15px;
+    .news-desc {
+        display: block;
+        white-space: nowrap;
+        font-size: 14px;
+        color: #333333;
+        vertical-align: middle;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .news-date {
+        display: inline-block;
+        padding: 0px 5px;
+        min-width: 40px;
+        text-align: center;
+        font-size: 14px;
+        color: #333333;
+        background: #EEF0FA;
+        border-radius: 3px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+}
+/* m端的new模块 */
+.news-ul-h5 {
+    display: none;
+}
+@media (max-width: 640px) {
+    .news {
+        padding-top: 50px;
+        min-width: auto;
+    }
+    .news-ul-pc {
+        display: none;
+    }
+    .news-ul-h5 {
+        display: block;
+    }
+    .news-content {
+        width: 100%;
+        padding-top: 20px;
+        margin-top: 0px;
+        margin-bottom: 55px;
+        .news-ul-h5 .news-item {
+            width: 100%;
+            margin-top: 10px;
+            &:hover {
+                background: #F2F2F2;
+            }
+            .news-h5-left {
+                width: 30%;
+                display: inline-block;
+                vertical-align: middle;
+                img {
+                    width: 90%;;
+                    margin-left: 12%;
+                    border-radius: 4px;
+                }
+            }
+            .news-h5-right {
+                width: 64%;
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 5px;
+                p {
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+                .news-desc {
+                    font-size: 14px;
+                    color: #333333;
+                    margin-bottom: 5px;
+                }
+                .news-time {
+                    font-size: 12px;
+                    color: #999999;
+                }
+            }
+        }
+    }
+}

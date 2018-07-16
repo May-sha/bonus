@@ -1,0 +1,124 @@
+@footer-color: #17263E;;
+.yahei (@font-size: 14px) {
+    font-size: @font-size;
+}
+.footer-container {
+    background-color: #17263E;
+}
+footer {
+    width: 100%;
+    background-color: @footer-color;
+    .yahei(12px);
+    color: #999;
+    text-align: center;
+    .footer-content {
+        max-width: 1200px;
+        margin: 0px auto;
+        padding: 30px 0px;
+    }
+    .footer-left {
+        float: left;
+        width: 21.67%;
+        min-height:305px;
+        border-right: 1px solid #0E1B31;
+    }
+    .footer-right {
+        width: 78%;
+        float: right;
+        text-align: right;
+    }
+    .footer-right dl {
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 7%;
+        width: 12.5%;
+        text-align: left;
+        float: ~"left\0";
+        dt {
+            font-size: 14px;
+            margin-bottom: 23px;
+            color: #fff;
+        }
+        ul.footer-list li {
+            margin-bottom: 5px;
+            a {
+                text-decoration: none;
+            }
+        }
+        .footer-list a {
+            line-height: 1.8;
+            color: #999;
+            font-size: 12px;
+            text-decoration: none;
+            &:hover, &:active {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+    .footer-left dl {
+        text-align: left;
+        dt {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 18px;
+        }
+        dd, ul, li, a {
+            font-size: 14px;
+            color: #999;
+            line-height: 1.2;
+            margin-bottom: 12px;
+            text-decoration: none;
+        }
+        .wechat {
+            display: inline-block;
+            a {
+                display: inline-block;
+                margin-bottom: 12px;
+            }
+            img {
+                width: 92px;
+                margin-left: 20px;
+            }
+        }
+        .footer-left-icon {
+            background-size: 13px;
+            background-repeat: no-repeat;
+            padding-left: 20px;
+        }
+        .footer-qq {
+            background-image: url(/maincloud/img/service/footer-qq.png);
+        }
+        .footer-time {
+            background-image: url(/maincloud/img/service/footer-time.png);
+        }
+        .footer-wechat {
+            background-image: url(/maincloud/img/service/footer-wechat.png);
+            background-size: 15px;
+        }
+    }
+    .beian-container {
+        padding: 30px 15px;
+        min-height: 20px;
+        line-height: 20px;
+        border-top: 1px solid #0E1B30;
+        color: #999;
+        span, a {
+            color: #999;
+            text-decoration: none;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    footer .footer-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 780px) {
+    .footer-content {
+        display: none;
+    }
+}

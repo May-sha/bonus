@@ -1,0 +1,29 @@
+.gotop-content {
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #FBFBFB;
+    box-shadow: 0 0 3px 0 rgba(33,86,178,0.22);
+    border-radius: 55px;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    z-index: 11;
+    display: none;
+}
+.gotop-logo {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-image: url(/maincloud/img/gotop/top-normal.png);
+}
+
+.gotop-href:hover .gotop-logo {
+    background-image: url(/maincloud/img/gotop/top-click.png);
+}
+@media (max-width: 640px) {
+    .gotop-content {
+        display: none !important; //因为goToTop本身有隐藏展示操作，此处important使其始终不显示
+    }
+}
