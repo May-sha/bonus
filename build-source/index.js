@@ -337,6 +337,7 @@ gulp.task('build-rev-1', ['dev'], function () {
             },
             pathRule: function (path) {
                 let host = '';
+
                 return `${ host }/maincloud/${ path }`;
             }
         }))
@@ -366,7 +367,6 @@ gulp.task('build-rev', ['build-rev-1'], function () {
             },
             pathRule: function (path) {
                 let host = '';
-                
                 return `${ host }/maincloud/img/${ path }`
             }
         }))
