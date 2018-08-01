@@ -1,0 +1,56 @@
+.page-header-part {
+    .page-logo {
+        display: inline-block;
+        padding: 30px;
+        .logo {
+            display: inline-block;
+            width: 180px;
+            height: 30px;
+            background: url(/maincloud/img/common/logo.png) no-repeat;
+            background-size: contain;
+            /*background-position:0 7px;*/
+        }
+    }
+    .page-nav-container {
+        position: absolute;
+        z-index: 20;
+        top: 35%;
+        right: 35px;
+        display: inline-block;
+        height: 350px;
+        .page-nav-content {
+            margin-top: -50%;
+        }
+        .nav-list li {
+            text-align: right;
+        }
+        .nav-item {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 12px;
+            color: #fff;
+            text-decoration: none;
+            &::after {
+                margin-left: 30px;
+                display: inline-block;
+                content: '';
+                width: 11px;
+                height: 11px;
+                background: url(/maincloud/img/pageheader/nav-icon.png) no-repeat;
+                background-size: 100%;
+            }
+            &:hover {
+                font-weight: bold;
+                &::after {
+                    background: url(/maincloud/img/pageheader/nav-icon-hover.png) no-repeat;
+                }
+            }
+            &.active {
+                font-weight: bold;
+                &::after {
+                    background: url(/maincloud/img/pageheader/nav-icon-active.png) no-repeat;
+                }
+            }
+        }
+    }
+}
