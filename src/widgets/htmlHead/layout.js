@@ -16,6 +16,9 @@ module.exports = function (option) {
         <link rel="shortcut icon" href="/maincloud/img/sigma.ico" />
         <link rel="stylesheet" href="/maincloud/css/base.css">
 
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
+
         <script src="/maincloud/preload.js"></script>
     </head>`
 }

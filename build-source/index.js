@@ -75,6 +75,7 @@ function jsToHtml () {
     return through.obj(function (file, enc, done) {
         var pathR = file.path.slice(file.path.indexOf(distName))
         var htmlhead = require('./dist-build/widgets/htmlHead/layout.js');
+        var threepart = require('./dist-build/widgets/threepart/layout.js');
         var seoConfig = require('./dist-build/seoConfig.js');
         var configObj = {
                             project: 'BonusCloud',
@@ -96,7 +97,10 @@ function jsToHtml () {
                 var sContent = `<!DOCTYPE html>
                                 <html>
                                     ${htmlhead(headOption)}
-                                    <body>${fnStr}${globalJs}</body>
+                                    <body>
+                                        ${fnStr}${globalJs}
+                                        ${threepart()}
+                                    </body>
                                 </html>`;
                 this.push(new VFile({
                     cwd: file.cwd,

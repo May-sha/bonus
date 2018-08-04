@@ -1,6 +1,6 @@
 export default () => {
     try {
-        return `<div id="home" class="page-banner-part content-part-wrapper">
+        return `<div class="page-banner-part">
             <div class="banner-text-wrapper">
                 <div class="banner-text">
                     <p class="title">BONUS CLOUD</p>
@@ -8,7 +8,7 @@ export default () => {
                 </div>
             </div>
             <div class="page-banner-wrapper">
-                <img src="/maincloud/img/pagebanner/banner.png" />
+                <img src="/maincloud/img/pagebanner/banner_pc.png" />
             </div>
         </div>`
     } catch (e) {

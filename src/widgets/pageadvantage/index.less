@@ -1,0 +1,115 @@
+.advantage-part-wrapper {
+    margin: 50px 0 150px;
+    .advantage-title-wrapper.content-title-wrapper {
+        margin-bottom: 120px;
+    }
+    .pc-icon-wrapper {
+        margin-bottom: 80px;
+        padding: 0 10%;
+        .pc-icon {
+            width: 16%;
+            display: inline-block;
+            padding: 0 2%;
+            box-sizing: border-box;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+    .slider {
+        width: 50%;
+        margin-left: 12%;
+    }
+    .slick-slide {
+        img {
+            display: none;
+        }
+        .title {
+            font-size: 18px;
+            margin-bottom: 18px;
+        }
+        .introduction {
+            font-size: 12px;
+        }
+    }
+    .slick-dots {
+        display: none;
+        li button {
+            &:before {
+                display: none !important;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 720px) {
+    .advantage-part-wrapper {
+        margin: 50px 0 100px;
+        .pc-advantage-wrapper {
+            display: none;
+        }
+        .advantage-title-wrapper.content-title-wrapper {
+            margin-bottom: 50px;
+        }
+        .slider {
+            width: 100%;
+            margin: 0;
+        }
+        .slick-slide {
+            img {
+                display: block;
+                width: 35%;
+                margin-bottom: 40px;
+            }
+        }
+        .advantage-dots {
+            text-align: left;
+            bottom: -30px;
+            li {
+                margin: 0;
+                margin-left: -5px;
+                margin-right: 2px;
+                color: #fff;
+                button {
+                    color: #fff;
+                    &:before {
+                        display: inline-block !important;
+                        color: #fff;
+                        opacity: 0.4;
+                    }
+                }
+                &.slick-active button:before {
+                    color: #fff;
+                    opacity: 0.9;
+                }
+            }
+        } 
+    }   
+}
+
+// .slider {
+//     margin: 30px auto;
+// }
+
+// .slick-slide {
+//   margin: 0px 20px;
+// }
+
+
+
+
+// .slick-slide {
+//   transition: all ease-in-out .3s;
+//   opacity: .2;
+// }
+
+// .slick-active {
+//   opacity: .5;
+// }
+
+// .slick-current {
+//   opacity: 1;
+// }

@@ -1,0 +1,38 @@
+.partner-part-wrapper {
+    margin-bottom: 160px;
+    .partner-container {
+        margin: 0 10%;
+    }
+    .partner-item {
+        display: inline-block;
+        width: 33%;
+        min-height: 65px;
+        box-sizing: border-box;
+        padding: 0 9%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: top;
+        margin-bottom: 35px;
+        
+        .partner-item-content {
+            display: inline-block;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 720px) {
+    .partner-part-wrapper {
+        margin-bottom: 70px;
+        .partner-container {
+            margin: 0;
+        }
+        .partner-item {
+            width: 100%;
+            padding: 0 25%;
+            margin-bottom: 25px;
+        }
+    }
+}

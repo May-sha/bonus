@@ -1,0 +1,38 @@
+.agency-part-wrapper {
+    margin-bottom: 100px;
+    .agency-container {
+        margin: 0 10%;
+    }
+    .agency-item {
+        display: inline-block;
+        width: 33%;
+        min-height: 65px;
+        box-sizing: border-box;
+        padding: 0 9%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: top;
+        margin-bottom: 35px;
+        
+        .agency-item-content {
+            display: inline-block;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 720px) {
+    .agency-part-wrapper {
+        margin-bottom: 40px;
+        .agency-container {
+            margin: 0;
+        }
+        .agency-item {
+            width: 100%;
+            padding: 0 25%;
+            margin-bottom: 25px;
+        }
+    }
+}

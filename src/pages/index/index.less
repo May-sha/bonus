@@ -1,49 +1,69 @@
 @import "../../widgets/pageheader/index.less";
 @import "../../widgets/pagebanner/index.less";
 @import "../../widgets/pagehighlight/index.less";
+@import "../../widgets/pageadvantage/index.less";
+@import "../../widgets/pagefounder/index.less";
+@import "../../widgets/pageadvisor/index.less";
+@import "../../widgets/pageagency/index.less";
+@import "../../widgets/pagepartner/index.less";
+@import "../../widgets/pagewhitepaper/index.less";
+@import "../../widgets/pageroadmap/index.less";
+@import "../../widgets/pagecontact/index.less";
 
 // @import "../../widgets/banners/index.less";
-@import "../../widgets/product/index.less";
-@import "../../widgets/whitepaper/index.less";
-@import "../../widgets/roadmap/index.less";
-@import "../../widgets/news/index.less";
-@import "../../widgets/team/index.less";
-@import "../../widgets/contact/index.less";
-@import "../../widgets/gotop/index.less";
+// @import "../../widgets/product/index.less";
+// @import "../../widgets/whitepaper/index.less";
+// @import "../../widgets/roadmap/index.less";
+// @import "../../widgets/news/index.less";
+// @import "../../widgets/team/index.less";
+// @import "../../widgets/contact/index.less";
+// @import "../../widgets/gotop/index.less";
 
 .main-container {
     position: relative;
-    height: 100%;
     margin: 0 auto;
+    min-width: 1200px;
+    box-sizing: border-box;
+    padding: 30px 50px 0;
     background-color: #000519;
-}
-.content-block  {
-    padding: 80px 0px;
-    background-color: #f3f5f7;
-    &:nth-child(odd) {
-        background-color: #fff;
+    color: #fff;
+    .content-title-wrapper {
+        margin-bottom: 50px;
+        h3 {
+            font-size: 27px;
+            color: #fff;
+            margin-bottom: -2px;
+            letter-spacing: 5px;
+        }
+        .title-line {
+            display: inline-block;
+            width: 14px;
+            margin-left: 3px;
+            border-bottom: 4px solid #fff;
+        }
     }
 }
-.contact-container {
-    padding: 80px 0 40px;
-}
-.cloud-title {
-    margin-bottom: 60px;
-
-    height: 35px;
-    line-height: 35px;
-
-    text-align: center;
-    font-size: 32px;
-    color: #474959;
-    letter-spacing: 0;
-    // &::after {
-    //     display: block;
-    //     margin: 0 auto;
-    //     content: ' ';
-    //     height: 15px;
-    //     width: 60px;
-    //     background-color: transparent;
-    //     border-bottom: 3px solid #0b224d;
-    // }
+@media (max-width: 720px) {
+    .main-container {
+        min-width: 320px;
+        width: 100%;
+        padding: 90px 0 40px;
+        .content-part-wrapper {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0 5%;
+        }
+        .content-title-wrapper {
+            margin-bottom: 30px;
+            h3 {
+                font-size: 22px;
+                letter-spacing: 3px;
+                margin-bottom: 0px;
+            }
+            .title-line {
+                width: 12px;
+                margin-left: 0;
+            }
+        }
+    }
 }

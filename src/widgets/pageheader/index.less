@@ -1,35 +1,32 @@
 .page-header-part {
-    .page-logo {
+    .page-logo .logo {
         display: inline-block;
-        padding: 30px;
-        .logo {
-            display: inline-block;
-            width: 180px;
-            height: 30px;
-            background: url(/maincloud/img/common/logo.png) no-repeat;
-            background-size: contain;
-            /*background-position:0 7px;*/
-        }
+        width: 180px;
+        height: 30px;
+        background: url(/maincloud/img/common/logo.png) no-repeat;
+        background-size: contain;
+        /*background-position:0 7px;*/
     }
     .page-nav-container {
-        position: absolute;
+        position: fixed;
         z-index: 20;
         top: 35%;
         right: 35px;
         display: inline-block;
         height: 350px;
         .page-nav-content {
-            margin-top: -50%;
+            margin-top: -40%;
         }
         .nav-list li {
             text-align: right;
         }
         .nav-item {
             display: inline-block;
-            padding: 15px 30px;
+            padding: 12px 0px 12px 30px;
             font-size: 12px;
             color: #fff;
             text-decoration: none;
+            letter-spacing: 2px;
             &::after {
                 margin-left: 30px;
                 display: inline-block;
@@ -49,6 +46,61 @@
                 font-weight: bold;
                 &::after {
                     background: url(/maincloud/img/pageheader/nav-icon-active.png) no-repeat;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 720px) {
+    .header-container {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px 5%;
+        background-color: #000;
+    }
+    .page-header-part {
+        position: relative;
+        &, .bonuscloud-header {
+            height: 27px;
+        }
+        .page-logo .logo {
+            width: 160px;
+            height: 27px;
+        }
+        .page-nav-container {
+            position: absolute;
+            right: 0;
+            top: 0;
+            .page-nav-content {
+                margin-top: 0;
+            }
+            .mobile-nav-icon {
+                display: inline-block;
+                width: 27px;
+                height: 27px;
+                background: url(/maincloud/img/pageheader/m-nav-icon.png) no-repeat;
+                background-size: contain;
+                background-position: bottom;
+            }
+            .nav-list {
+                display: none;
+                width: 100%;
+                position: fixed;
+                right: 0;
+                background-color: #000;
+                padding: 20px 0;
+                li {
+                    text-align: center;
+                }
+                .nav-item {
+                    display: block;
+                    padding: 15px 30px;
+                    &::after {
+                        display: none;
+                    }
                 }
             }
         }

@@ -1,9 +1,10 @@
 export default () => {
     try {
         return `<div id="highlight" class="page-highlight-part content-part-wrapper">
-            <p class="hightlight-title-wrapper">
-               <h5>HIGHLIGHT</h5> 
-            </p>
+            <div class="hightlight-title-wrapper content-title-wrapper">
+               <h3>HIGHLIGHT</h3> 
+               <span class="title-line"></span>
+            </div>
             <div class="page-highlight-wrapper">
                 <div class="hightlight-item-wrapper storage-part">
                     <img class="pc-img" src="/maincloud/img/pagehighlight/highlight1.png" />
