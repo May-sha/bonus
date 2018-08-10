@@ -11,7 +11,7 @@ function templateHtml (data) {
                         return `
                         <div class="team-member" id="introduction">
                             <div class="team-member-pic">
-                                <img class="lazyload-el" src="/maincloud/img/default.png" data-src="${item.picture}">
+                                <img class="lazyload-el" src="${item.picture}" data-src="${item.picture}">
                             </div>
                             <div class="team-member-content">
                                 <p class="team-member-name">${item.name}</p>

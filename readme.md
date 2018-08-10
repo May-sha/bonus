@@ -34,6 +34,7 @@ node v7.0+ 支持async
 /src/widgets 各个小模块 
 /src/components 
 /src/preload.js 前端公共js 样式
+
 ####/src/pages
 以功能为模块，每个功能一个文件夹
 
@@ -51,10 +52,6 @@ less 代码会被打包成css文件，在引用时请使用css引用，例如：
 ##问题 
 
 
-
-##项目新增记录
-添加pre-push钩子，git push 时构建代码检查错误 2017-03-26
-
 ##线上路由规则
 以 '/about', '/index', '/product', '/solution' 开始的为静态html资源文件，访问时不带.html 后缀，映射到/maincloud/build/output/pages 下
 例如：资源 /pages/product/server.html 访问时路径为 /product/server
@@ -65,10 +62,6 @@ less 代码会被打包成css文件，在引用时请使用css引用，例如：
 注：首页为 /  不带 '/index/index'
 
 部署脚本 /maincloud/init.sh
-
-##不展示页面说明
-/pages/solution/enterprise.html 企业级应用
-/pages/solution/internetplus.html 互联网+
 
 
 ##本地watch

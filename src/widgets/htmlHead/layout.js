@@ -12,7 +12,7 @@ module.exports = function (option) {
         <meta http-equiv="Refresh" content="0; url=/browsers">
         <![endif]-->
         
-        <title>BonusCloud: The next generation computing system.</title>
+        <title>BonusCloud: Blockchain-driven edge computing and decentralized cloud service.</title>
         <link rel="shortcut icon" href="/maincloud/img/sigma.ico" />
         <link rel="stylesheet" href="/maincloud/css/base.css">
 

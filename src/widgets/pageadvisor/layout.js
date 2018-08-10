@@ -11,7 +11,7 @@ function templateHtml (data) {
                         return `
                         <div class="team-member" id="introduction">
                             <div class="team-member-pic">
-                                <img class="lazyload-el" src="/maincloud/img/default.png" data-src="${item.picture}">
+                                <img class="lazyload-el" src="${item.picture}" data-src="${item.picture}">
                             </div>
                             <div class="team-member-content">
                                 <p class="team-member-name">${item.name}</p>
@@ -29,7 +29,7 @@ function templateHtml (data) {
 }
 
 let datas = [{
-    name: 'Wang Binsheng',
+    name: 'Binsheng Wang',
     introduction: `Consultant of Blockchain Development Organization, professor at Graduate School of Chinese Academy of Social Sciences.`,
     picture: '/maincloud/img/pagefounder/4.png'
 }, {

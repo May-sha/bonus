@@ -10,8 +10,8 @@
     "watch": "sh watch.sh",
     "build-bgy": "CMS_ENV=cloud cd build && rm -rf dist-build && gulp build"
   },
-  "author": "zhangfangcheng",
-  "license": "ISC",
+  "author": "bonuscloud FE",
+  "license": "",
   "dependencies": {
     "ansi-cyan": "^0.1.1",
     "babel-cli": "^6.11.4",

@@ -9,7 +9,7 @@ function templateHtml (data) {
                 ${data.map(function (item) {
                     return `<div class="partner-item">
                         <a class="partner-item-content" href="${item.link || 'javascript:void(0);'}">
-                            <img class="lazyload-el" alt="${item.name}" src="/maincloud/img/default.png" data-src="${item.picture}">
+                            <img class="lazyload-el" alt="${item.name}" src="${item.picture}" data-src="${item.picture}">
                         </a>
                     </div>`
                 }).join('')}

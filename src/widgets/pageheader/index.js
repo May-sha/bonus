@@ -24,7 +24,7 @@ $(function(){
         let scrollTop = $(window).scrollTop();
         let i = 0;
         while (anchors[i]) {
-            if ( (scrollTop + $(window).height()) < $(`#${anchors[i]}`).offset().top) {
+            if ($(`#${anchors[i]}`).offset().top > scrollTop + 60) {
                 break;
             }
             i++;
@@ -41,7 +41,6 @@ $(function(){
             clearTimeout(timeClock);
             timeClock = null;
             var shouldCheckedNav = getCurrentAnchors();
-            console.log('shouldCheckedNav', shouldCheckedNav);
             $(`.nav-item[anchor='${shouldCheckedNav}']`).click();
         }, time)
     })

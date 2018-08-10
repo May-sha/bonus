@@ -9,7 +9,7 @@ function templateHtml (data) {
                 ${data.map(function (item) {
                     return `<div class="agency-item">
                         <a class="agency-item-content" href="${item.link || 'javascript:void(0);'}">
-                            <img class="lazyload-el" alt="${item.name}" src="/maincloud/img/default.png" data-src="${item.picture}">
+                            <img class="lazyload-el" alt="${item.name}" src="${item.picture}" data-src="${item.picture}">
                         </a>
                     </div>`
                 }).join('')}
@@ -19,21 +19,21 @@ function templateHtml (data) {
 }
 
 let datas = [{
-    name: 'FENBUSH',
-    link: '',
-    picture: '/maincloud/img/pageagency/1.png'
-}, {
+//     name: 'FENBUSH',
+//     link: '',
+//     picture: '/maincloud/img/pageagency/1.png'
+// }, {
     name: 'ONEBOAT Capital',
     link: '',
-    picture: '/maincloud/img/pageagency/2.png'
-}, {
-    name: 'Huobi Capital',
-    link: '',
-    picture: '/maincloud/img/pageagency/3.png'
-}, {
-    name: 'OK blockchain capital',
-    link: '',
-    picture: '/maincloud/img/pageagency/4.png'
+    picture: '/maincloud/img/pageagency/oneboat.png'
+// }, {
+//     name: 'Huobi Capital',
+//     link: '',
+//     picture: '/maincloud/img/pageagency/3.png'
+// }, {
+//     name: 'OK blockchain capital',
+//     link: '',
+//     picture: '/maincloud/img/pageagency/4.png'
 }];
 
 export default () => {

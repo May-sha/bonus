@@ -18,7 +18,7 @@ export default () => {
                     </a>
                 </li>
                 <li class="contact-item">
-                    <a target="_blank" href="hi@bonuscloud.io" class="contact-item-content">
+                    <a target="_blank" href="mailto:hi@bonuscloud.io" class="contact-item-content">
                         <img src="/maincloud/img/pagecontact/email.png" />
                     </a>
                 </li>

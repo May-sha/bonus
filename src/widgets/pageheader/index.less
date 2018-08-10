@@ -34,18 +34,18 @@
                 width: 11px;
                 height: 11px;
                 background: url(/maincloud/img/pageheader/nav-icon.png) no-repeat;
-                background-size: 100%;
+                background-size: contain;
             }
             &:hover {
                 font-weight: bold;
                 &::after {
-                    background: url(/maincloud/img/pageheader/nav-icon-hover.png) no-repeat;
+                    background-image: url(/maincloud/img/pageheader/nav-icon-hover.png);
                 }
             }
             &.active {
                 font-weight: bold;
                 &::after {
-                    background: url(/maincloud/img/pageheader/nav-icon-active.png) no-repeat;
+                    background-image: url(/maincloud/img/pageheader/nav-icon-active.png);
                 }
             }
         }
