@@ -25,11 +25,11 @@ let datas = [{
 // }, {
     name: 'ONEBOAT Capital',
     link: '',
-    picture: '/maincloud/img/pageagency/oneboat.png'
-// }, {
-//     name: 'Huobi Capital',
-//     link: '',
-//     picture: '/maincloud/img/pageagency/3.png'
+    picture: '/maincloud/img/pageagency/2.png'
+}, {
+    name: 'Huobi Capital',
+    link: '',
+    picture: '/maincloud/img/pageagency/3.png'
 // }, {
 //     name: 'OK blockchain capital',
 //     link: '',

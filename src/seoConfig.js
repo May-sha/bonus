@@ -1,18 +1,17 @@
 var config = {
     default: {
         title: 'BonusCloud',
-        keyword: 'Blockchain-driven edge computing and decentralized cloud service.',
+        keyword: 'blockchain,bonuscloud,computing,decentralized cloud,cloud service',
         description: 'Blockchain-driven edge computing and decentralized cloud service.'
     },
     index: {
         index: {
             title: 'BonusCloud',
-            keyword: 'Blockchain-driven edge computing and decentralized cloud service.',
+            keyword: 'blockchain,bonuscloud,computing,decentralized cloud,cloud service',
             description: 'Blockchain-driven edge computing and decentralized cloud service.'
         }
     }
 }
-
 
 
 module.exports = function (v) {

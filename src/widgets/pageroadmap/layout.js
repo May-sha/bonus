@@ -16,7 +16,7 @@ function templateHtml (roadmap) {
                             return `<li class="roadmap-item roadmap-item-${index}">
                                     <div class="item-content">
                                         <p class="roadmap-introduction">
-                                            ${item.events}
+                                            ${item.time}，${item.events}
                                         </p>
                                     </div>
                                 </li>`;
@@ -31,55 +31,60 @@ function templateHtml (roadmap) {
 
 
 let data = [{
-    // time: '2018 Q3',
+    time: 'Q2 2018',
     // from: '2018-07-01 00:00:00',
     // to: '2018-10-01 00:00:00',
-    events: 'May, 2018, the BonusCloud project started.'
+    events: 'the BonusCloud Kick-off'
 }, {
-    time: '2018 Q4',
-    from: '2018-10-01 00:00:00',
-    to: '2019-01-01 00:00:00',
-    events: 'July, 2018, private equity funding completed.'
+    time: 'Q3 2018',
+    // from: '2018-10-01 00:00:00',
+    // to: '2019-01-01 00:00:00',
+    events: 'White Paper and BonusNet Beta'
 }, {
-    time: '2019 Q1',
-    from: '2019-01-01 00:00:00',
-    to: '2019-04-01 00:00:00',
-    events: 'August, 2018, white paper release, token listing.'
+    time: 'Q4 2018',
+    // from: '2019-01-01 00:00:00',
+    // to: '2019-04-01 00:00:00',
+    events: 'BonusChain Kick-off'
 }, {
-    time: '2019 Q2',
-    from: '2019-04-01 00:00:00',
-    to: '2019-07-01 00:00:00',
-    events: 'Q3, 2018, BonusNetwork prototype release, token reward for invited participants.'
+    time: 'Q1 2019',
+    // from: '2019-04-01 00:00:00',
+    // to: '2019-07-01 00:00:00',
+    events: 'BonusComputing Kick-off'
 }, {
-    time: '2019 Q3',
-    from: '2019-07-01 00:00:00',
-    to: '2019-10-01 00:00:00',
-    events: 'Q4, 2018, testnet release.'
+    time: 'Q1 2019',
+    // from: '2019-07-01 00:00:00',
+    // to: '2019-10-01 00:00:00',
+    events: 'BonusChain Beta'
 }, {
-    time: '2019 Q4',
-    from: '2019-10-01 00:00:00',
-    to: '2020-01-01 00:00:00',
-    events: 'Q1, 2019, BonusNetwork release.'
+    time: 'Q2 2019',
+    // from: '2019-10-01 00:00:00',
+    // to: '2020-01-01 00:00:00',
+    events: 'BonusNet 1.0 and BonusChain 1.0'
 }, {
-    time: '2019 Q4',
-    from: '2019-10-01 00:00:00',
-    to: '2020-01-01 00:00:00',
-    events: 'Q2 2019，mainnet prototype release, BonusStorage prototype release.'
+    time: 'Q3 2019',
+    // from: '2019-10-01 00:00:00',
+    // to: '2020-01-01 00:00:00',
+    events: 'BonusStorage Kick-off'
 }, {
-    time: '2019 Q4',
-    from: '2019-10-01 00:00:00',
-    to: '2020-01-01 00:00:00',
-    events: 'Q3, 2019, mainnet release.'
+    time: 'Q3 2019',
+    // from: '2019-10-01 00:00:00',
+    // to: '2020-01-01 00:00:00',
+    events: 'BonusComputing Beta'
 }, {
-    time: '2019 Q4',
-    from: '2019-10-01 00:00:00',
-    to: '2020-01-01 00:00:00',
-    events: 'Q4, 2019, BonusStorage release.'
+    time: 'Q4 2019',
+    // from: '2019-10-01 00:00:00',
+    // to: '2020-01-01 00:00:00',
+    events: 'Full Function platform Kick-off'
 }, {
-    time: '2019 Q4',
-    from: '2019-10-01 00:00:00',
-    to: '2020-01-01 00:00:00',
-    events: 'Q1, 2020, SDK and development toolset release.'
+    time: 'Q4 2019',
+    // from: '2019-10-01 00:00:00',
+    // to: '2020-01-01 00:00:00',
+    events: 'BonusComputing 1.0 and BonusStorage Beta'
+}, {
+    time: 'Q1 2020',
+    // from: '2019-10-01 00:00:00',
+    // to: '2020-01-01 00:00:00',
+    events: 'SDE，SDK and BonusStorage 1.0'
 }];
 
 export default () => {

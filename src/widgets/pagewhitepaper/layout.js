@@ -5,7 +5,9 @@ export default () => {
             <span class="title-line"></span>
         </div>
         <div class="whitepaper-content-container">
-            <div class="whitepaper-button">WHITEPAPER</div>
+            <a class="whitepaper-button" href="javascript:void(0);">
+                WHITEPAPER
+            </a>
         </div>
     </div>`;
 }

@@ -22,6 +22,11 @@ export default () => {
                         <img src="/maincloud/img/pagecontact/email.png" />
                     </a>
                 </li>
+                <li class="contact-item">
+                    <a target="_blank" href="https://github.com/BonusCloud" class="contact-item-content">
+                        <img src="/maincloud/img/pagecontact/github3.png" />
+                    </a>
+                </li>
             </ul>
         </div>`;
 }

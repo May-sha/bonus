@@ -31,15 +31,11 @@ function templateHtml (data) {
 let datas = [{
     name: 'Binsheng Wang',
     introduction: `Consultant of Blockchain Development Organization, professor at Graduate School of Chinese Academy of Social Sciences.`,
-    picture: '/maincloud/img/pagefounder/4.png'
-}, {
-    name: 'Jian Xin',
-    introduction: `Founder and CEO of Wooyun Network, former founder of Baidu security team.`,
-    picture: '/maincloud/img/pagefounder/5.png'
+    picture: '/maincloud/img/pagefounder/binsheng.jpeg'
 }, {
     name: 'Coly Li',
     introduction: `Linux Kernel Maintainer, former founder of Taobao kernel team.`,
-    picture: '/maincloud/img/pagefounder/6.png'
+    picture: '/maincloud/img/pagefounder/coly.jpeg'
 }];
 
 export default () => {
